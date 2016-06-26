@@ -1,0 +1,17 @@
+- DEPLOYMENT:
+
+Place the folder 'array_keys' itself (not only its content)
+inside htdocs doc_root folder, it could be c:\xampp\htdocs,
+c:\wamp\www\ on Windows systems, or /var/www on GNU/Linux systems. 
+
+Access landing page by browsing:
+
+http://localhost/array_keys/index.php
+
+
+Enjoy!
+
+- Author:
+Elías A. Angulo Klein.
+email: elias.angulo.klein(at)gmail.com
+

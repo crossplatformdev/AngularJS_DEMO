@@ -1,0 +1,35 @@
+<div class="text-right" ng-controller="ReviewController as reviewCtrl">
+    <div ng-class="{ active:tab.isSet(3) }" ><a ng-click="tab.setTab(3)" class="btn btn-success" ng-class="{ active:!tab.isSet(3) }">Leave a Review</a>
+        <!--  Review Tab's Content  -->
+
+        <!--  Review Form -->
+        <form name="reviewCtrl.Form" ng-submit="reviewCtrl.addReview(aks.aks.arrayKeys)" ng-show="tab.isSet(3)">
+
+            <!--  Live PreviewCtrl. -->
+            <blockquote >
+                <strong>{{ reviewCtrl.stars}} Stars</strong>
+                {{ reviewCtrl.body}}
+                <cite class="clearfix">—{{ reviewCtrl.author}} just now.</cite>
+            </blockquote>
+
+            <!--  Review Form -->
+            <h4>Submit a Review</h4>
+            <fieldset class="form-group">
+                <select ng-model="reviewCtrl.stars" class="form-control" ng-options="stars for stars in [5, 4, 3, 2, 1]" title="Stars">
+                    <option value>Rate the Product</option>
+                    <option value>{{star}}</option>
+                </select>
+            </fieldset>
+            <fieldset class="form-group">
+                <textarea ng-model="reviewCtrl.body" class="form-control" placeholder="Write a short reviewCtrl. of the product..." title="Review"></textarea>
+            </fieldset>
+            <fieldset class="form-group">
+                <input ng-model="reviewCtrl.author" type="email" class="form-control" placeholder="jimmyDean@example.org" title="Email" />
+            </fieldset>
+            <fieldset class="form-group">
+                <input type="submit" class="btn btn-primary pull-right" value="Submit Review" />
+            </fieldset>
+        </form>
+        <hr>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+{
+    "reviews": [
+        {
+            "name": "Sir Francis Drake",
+            "message": "Definitely I will hire this guy!",
+            "stars": [1, 2, 3, 4, 5],
+            "date": "2016-06-16T23:47:53.773Z"
+        },
+        {
+            "name": "Thomas Tew",
+            "message": "I want you to join my crew!",
+            "stars": [1, 2, 3, 4],
+            "date": "2016-06-15T21:34:23.773Z"
+        },
+        {
+            "name": "Anne Bonny",
+            "message": "I offer you a position in Ireland... email me.",
+            "stars": [1, 2, 3, 4, 5],
+            "date": "2016-06-18T11:24:22.773Z"
+        }
+    ]
+}
